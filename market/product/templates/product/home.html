@@ -6,7 +6,7 @@
 <div class="container mt-3">
     <div class="container mt-3 mb-4 text-center">
         <img>
-        <h2 class="text mb-4" style="font-family: 'montserrat'; font-weight: 700; color:#9cd11a;">"Harvesting the Future: Shop Direct from Kenyan Fields!"</h2>
+        <h2 class="text mb-4" style="font-family: 'montserrat'; font-weight: 700; color:#9cd11a;">"Harvesting the Future: Shop Direct from Bracu Farm!"</h2>
         <p class="text mb-4" style="font-family: 'montserrat';">We foster a sustainable ecosystem where farmers can thrive, <br>while making shopping for fresh and quality produce a breeze while supporting the growth of local agriculture.</p>
         <p style="font-family: 'Chi'; color:#04371a; font-size: 24px;">Happy Shopping!</p>
     </div>
@@ -19,8 +19,8 @@
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}" style="height: 200px; object-fit: cover; width: 100%; border-top-left-radius:10px; border-top-right-radius:10px;">
                     <div class="card-body">
                         <h2 class="card-title text-black text-capitalize fs-6 mb-1">{{ product.name }}</h2>
-                        <p class="card-text text-dark" style="font-weight: 100;">Desc: {{ product.description|truncatewords:2 }}</p>
-                        <p class="card-text fw-3" style="color:#ff7c1a;">Price: Kshs.{{ product.unit_price }}</p>
+                        <p class="card-text text-dark" style="font-weight: 100;">Description: {{ product.description|truncatewords:2 }}</p>
+                        <p class="card-text fw-3" style="color:#ff7c1a;">Price: Taka.{{ product.unit_price }}</p>
                     </div>
 
                     <div class="cart m-3" style="width: 50px;">
@@ -41,7 +41,7 @@
         <span class="step-links">
             {% if products.has_previous %}
                 <a class="btn btn-info" href="?page=1">First</a>
-                <a class="btn btn-dark" href="?page={{ products.previous_page_number }}">Prev</a>
+                <a class="btn btn-dark" href="?page={{ products.previous_page_number }}">Previous</a>
             {% endif %}
 
             <span class="current-page">
@@ -49,7 +49,7 @@
             </span>
 
             {% if products.has_next %}
-                <a class="btn btn-info" style="background-color: #9cd11a;" href="?page={{ products.next_page_number }}">Prev</a>
+                <a class="btn btn-info" style="background-color: #9cd11a;" href="?page={{ products.next_page_number }}">Previous</a>
                 <a class="btn btn-dark" style="background-color: #04371a;" href="?page={{ products.paginator.num_pages }}">next</a>
             {% endif %}
         </span>
@@ -60,9 +60,9 @@
       <div class="row">
         <div class="col-md-6 text-white">
             <h5 class="text-decoration-underline text-white" style="font-size: 16px;">Contact Us:</h5>
-            <p style="font-size: 12px;">845 Redhill Street, Nairobi, Kenya</p>
-            <p style="font-size: 12px;">Email: info@farmersmarket.com</p>
-            <p style="font-size: 12px;">Phone: (254) 727-823124</p>
+            <p style="font-size: 12px;"> 9/7 west rajerbagh, Basaboo, Dhaka</p>
+            <p style="font-size: 12px;">Email: ehtashamul.islam.khan@g.bracu.ac.bd</p>
+            <p style="font-size: 12px;">Phone: 01796407890</p>
           </div>
 
         <div class="col-md-6 text-white">
